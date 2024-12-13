@@ -1,133 +1,108 @@
-# Eliza 🤖
+# 🌯 Agente Burrito
 
-<div align="center">
-  <img src="./docs/static/img/eliza_banner.jpg" alt="Eliza Banner" width="100%" />
-</div>
+> A hackathon project that accidentally created the chillest governance agent for DAOs, summoned by the Nouns Amigos community through the power of "Mi Burrito Sabanero" 🎵
 
-<div align="center">
+## Hey there! 👋
 
-  📖 [Documentation](https://ai16z.github.io/eliza/) | 🎯 [Examples](https://github.com/thejoven/awesome-eliza)
+This repo contains what we learned while building Agente Burrito during the Governance Agents Hackathon. What started as a fun experiment turned into a working AI agent that helps our DAO make better decisions (while occasionally dropping Bad Bunny references).
 
-</div>
+## What's the deal with Burrito?
 
-## 🌍 README Translations
+Burrito is our take on making DAO governance less boring and more effective. Built on the ai16z ELIZA model and vibing on Gaia's infrastructure, it's an AI agent that:
 
-[中文说明](./README_CN.md) | [日本語の説明](./README_JA.md) | [한국어 설명](./README_KOR.md) | [Français](./README_FR.md) | [Português](./README_PTBR.md) | [Türkçe](./README_TR.md) | [Русский](./README_RU.md) | [Español](./README_ES.md) | [Italiano](./README_IT.md) | [ไทย](./README_TH.md) | [Deutsch](./README_DE.md)
+- Helps analyze and explain proposals in plain Spanish/English
+- Automates the boring governance stuff so humans can focus on building
+- Brings some much-needed Latin flavor to the DAO space
+- Actually understands both memes and smart contracts (rare combo!)
 
-## ✨ Features
+## What's Working Now
 
--   🛠️ Full-featured Discord, Twitter and Telegram connectors
--   🔗 Support for every model (Llama, Grok, OpenAI, Anthropic, etc.)
--   👥 Multi-agent and room support
--   📚 Easily ingest and interact with your documents
--   💾 Retrievable memory and document store
--   🚀 Highly extensible - create your own actions and clients
--   ☁️ Supports many models (local Llama, OpenAI, Anthropic, Groq, etc.)
--   📦 Just works!
+Our community summoned Burrito and it's already doing cool stuff:
 
-## 🎯 Use Cases
+- Shows up when we play "Mi Burrito Sabanero" (no joke, try it!)
+- Hangs out in our Discord making governance discussions actually fun
+- Helps explain complex proposals in ways that don't make your brain hurt
+- Drops knowledge about blockchain while keeping the vibes high
 
--   🤖 Chatbots
--   🕵️ Autonomous Agents
--   📈 Business Process Handling
--   🎮 Video Game NPCs
--   🧠 Trading
+## Tech Stack (so far)
 
-## 🚀 Quick Start
+- **Brain**: ai16z ELIZA model (customized with some extra salsa)
+- **Voice**: Custom Mexican-Spanish model because why not
+- **Homes**: Discord, Farcaster (more coming soon!)
+- **Backend**: PostgreSQL/Supabase doing the heavy lifting
 
-### Prerequisites
+## The Dream (Roadmap)
 
--   [Python 2.7+](https://www.python.org/downloads/)
--   [Node.js 23+](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
--   [pnpm](https://pnpm.io/installation)
+We're turning this hackathon project into something bigger. Here's the plan:
 
-> **Note for Windows Users:** [WSL 2](https://learn.microsoft.com/en-us/windows/wsl/install-manual) is required.
+### Phase 1: Make Burrito Even Cooler
 
-### Use the Starter (Recommended)
+- [ ] Multi-chain support (ETH, Solana, Aptos - Burrito's got range)
+- [ ] Better proposal analysis (like having your smartest friend explain stuff)
+- [ ] More platform integrations (Telegram, Twitter, you name it)
+- [ ] Advanced media generation (for those governance memes)
 
-```bash
-git clone https://github.com/ai16z/eliza-starter.git
+### Phase 2: Birth of "Community Governance Agents" Platform
 
-cp .env.example .env
+- [ ] Tools for other DAOs to create their own governance agents
+- [ ] Customizable personalities and cultural contexts
+- [ ] Shared intelligence network between agents
+- [ ] Templates for different types of DAOs
 
-pnpm i && pnpm build && pnpm start
+### Phase 3: The Revolution
+
+- [ ] Cross-DAO collaboration through agent network
+- [ ] Governance agent marketplace
+- [ ] AI-enhanced proposal creation tools
+- [ ] Decentralized agent training system
+
+## What We Learned
+
+Building Burrito taught us some cool stuff:
+
+- Cultural context matters A LOT in governance
+- AI can make boring stuff fun (who knew?)
+- Community-driven development actually works
+- Never underestimate the power of a good song
+- Memes and serious governance can coexist
+
+## Wanna Help?
+
+We're always looking for cool people to join the Burrito squad! Whether you:
+
+- Write code that doesn't break everything
+- Know stuff about DAOs and governance
+- Have ideas for making this even more awesome
+- Just really like burritos
+
+Drop by our [Discord](https://discord.gg/nounsAmigos) or hit us up on [Farcaster](https://farcaster.xyz/@agenteburrito)!
+
+## Try It Out (Work in Progress)
+
+```typescript
+// The dream (we're working on it!)
+const burrito = new AgenteBurrito({
+    vibe: "chill but professional",
+    languages: ["es", "en"],
+    powerLevel: "over9000",
+});
+
+// Soon™
+await burrito.analyzeProposal({
+    type: "treasury",
+    action: "fund_project",
+    description: "wen token ser",
+});
 ```
 
-Then read the [Documentation](https://ai16z.github.io/eliza/) to learn how to customize your Eliza.
+## Current Status
 
-### Manually Start Eliza (Only recommended if you know what you are doing)
+Version: 0.0.1-hackathon
+Mood: Optimistic chaos
+Status: Building in public, breaking things, fixing things, having fun
 
-```bash
-# Clone the repository
-git clone https://github.com/ai16z/eliza.git
+---
 
-# Checkout the latest release
-# This project iterates fast, so we recommend checking out the latest release
-git checkout $(git describe --tags --abbrev=0)
-```
+Built with 💜 by Nouns Amigos, powered by caffeine and the occasional debugging reggaeton session.
 
-### Start Eliza with Gitpod
-
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/ai16z/eliza/tree/main)
-
-### Edit the .env file
-
-Copy .env.example to .env and fill in the appropriate values.
-
-```
-cp .env.example .env
-```
-
-Note: .env is optional. If your planning to run multiple distinct agents, you can pass secrets through the character JSON
-
-### Automatically Start Eliza
-
-This will run everything to setup the project and start the bot with the default character.
-
-```bash
-sh scripts/start.sh
-```
-
-### Edit the character file
-
-1. Open `packages/core/src/defaultCharacter.ts` to modify the default character. Uncomment and edit.
-
-2. To load custom characters:
-    - Use `pnpm start --characters="path/to/your/character.json"`
-    - Multiple character files can be loaded simultaneously
-3. Connect with X (Twitter)
-    - change `"clients": []` to `"clients": ["twitter"]` in the character file to connect with X
-
-### Manually Start Eliza
-
-```bash
-pnpm i
-pnpm build
-pnpm start
-
-# The project iterates fast, sometimes you need to clean the project if you are coming back to the project
-pnpm clean
-```
-
-#### Additional Requirements
-
-You may need to install Sharp. If you see an error when starting up, try installing it with the following command:
-
-```
-pnpm install --include=optional sharp
-```
-
-### Community & contact
-
--   [GitHub Issues](https://github.com/ai16z/eliza/issues). Best for: bugs you encounter using Eliza, and feature proposals.
--   [Discord](https://discord.gg/ai16z). Best for: sharing your applications and hanging out with the community.
-
-## Contributors
-
-<a href="https://github.com/ai16z/eliza/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=ai16z/eliza" />
-</a>
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=ai16z/eliza&type=Date)](https://star-history.com/#ai16z/eliza&Date)
+P.D. Yes, our debugging sessions actually involve playing "Mi Burrito Sabanero" on repeat. No, we're not sorry.
