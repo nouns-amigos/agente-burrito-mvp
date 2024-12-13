@@ -32,4 +32,4 @@
 
 ## Defined in
 
-[packages/core/src/types.ts:1129](https://github.com/ai16z/eliza/blob/main/packages/core/src/types.ts#L1129)
+[packages/core/src/types.ts:1129](https://github.com/nouns-amigos/agente-burrito-mvp/blob/main/packages/core/src/types.ts#L1129)
