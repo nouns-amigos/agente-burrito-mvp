@@ -1,10 +1,9 @@
 import { Character, ModelProviderName, Clients } from "./types.ts";
-import { webSearchPlugin } from "../../plugin-web-search";
 
 export const defaultCharacter: Character = {
     name: "Agente Burrito",
     username: "burrito",
-    plugins: [webSearchPlugin],
+    plugins: [],
     clients: [Clients.DISCORD, Clients.FARCASTER],
     modelProvider: ModelProviderName.ANTHROPIC,
     settings: {
